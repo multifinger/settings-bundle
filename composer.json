@@ -13,12 +13,8 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "symfony/framework-bundle": "4.*",
-        "symfony/serializer": "4.*",
-        "symfony/console": "4.*"
-    },
-    "require-dev": {
-        "symfony/expression-language": "4.*"
+        "symfony/framework-bundle": "4.1^",
+        "symfony/console": "4.1^"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

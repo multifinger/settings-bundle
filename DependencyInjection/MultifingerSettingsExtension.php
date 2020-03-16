@@ -1,6 +1,6 @@
 <?php
 
-namespace Multifinger\AppSettingsBundle\DependencyInjection;
+namespace Multifinger\SettingsBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
