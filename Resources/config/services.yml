@@ -1,0 +1,5 @@
+services:
+
+    multifinger.app_settings:
+        class:                      Multifinger\AppSettingsBundle\Service\AppSettingsService
+        arguments:                  ['@doctrine']
