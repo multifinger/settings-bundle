@@ -9,7 +9,7 @@ use Multifinger\AppSettingsBundle\Entity\Setting;
  * Handles read-write methods to settings database
  * @author Maksim Borisov <maksim.i.borisov@gmail.com> 25.04.17 17:29
  */
-class AppSettingsService
+class SettingsService
 {
 
     protected $doctrine;

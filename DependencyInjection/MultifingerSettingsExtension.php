@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\Loader;
  * This is the class that loads and manages your bundle configuration
  * @author Maksim Borisov <maksim.i.borisov@gmail.com> 25.04.17 17:25
  */
-class MultifingerAppSettingsExtension extends Extension
+class MultifingerSettingsExtension extends Extension
 {
 
     /**

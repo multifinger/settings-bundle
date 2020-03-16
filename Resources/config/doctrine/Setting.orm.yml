@@ -1,7 +1,7 @@
-Multifinger\AppSettingsBundle\Entity\Setting:
+Multifinger\SettingsBundle\Entity\Setting:
     type:                           entity
-    table:                          multi__app_settings__setting
-    repositoryClass:                Multifinger\AppSettingsBundle\Repository\SettingRepository
+    table:                          multi__settings__setting
+    repositoryClass:                Multifinger\SettingsBundle\Repository\SettingRepository
     fields:
         name:                       { type: string, length: 255, id: true }
         value:                      { type: text }

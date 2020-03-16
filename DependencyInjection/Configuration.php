@@ -1,6 +1,6 @@
 <?php
 
-namespace Multifinger\AppSettingsBundle\DependencyInjection;
+namespace Multifinger\SettingsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

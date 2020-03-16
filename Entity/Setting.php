@@ -1,11 +1,11 @@
 <?php
 
-namespace Multifinger\AppSettingsBundle\Entity;
+namespace Multifinger\SettingsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @author Maksim Borisov <maksim.i.borisov@gmail.com> 25.04.17 17:48
+ * @author Maksim Borisov <maksim.i.borisov@gmail.com> 16.03.2020 19:16
  */
 class Setting
 {
