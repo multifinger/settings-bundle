@@ -1,6 +1,6 @@
 <?php
 
-namespace Multifinger\AppSettingsBundle\Service;
+namespace Multifinger\SettingsBundle\Service;
 
 use \Doctrine\Bundle\DoctrineBundle\Registry;
 use Multifinger\AppSettingsBundle\Entity\Setting;
