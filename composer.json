@@ -5,16 +5,11 @@
     "keywords": [ "settings", "symfony" ],
     "homepage": "https://github.com/multifinger/settings-bundle",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Maksim Borisov",
-            "email": "maksim.i.borisov@gmail.com"
-        }
-    ],
+    "authors": [{"name": "Maksim Borisov","email": "maksim.i.borisov@gmail.com"}],
     "require": {
-        "php": ">=7.0.0",
-        "symfony/framework-bundle": "4.1^",
-        "symfony/console": "4.1^"
+        "php": ">=7.1.0",
+        "symfony/framework-bundle": "^4.1",
+        "symfony/console": "^4.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
