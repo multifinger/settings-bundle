@@ -3,7 +3,7 @@
 namespace Multifinger\SettingsBundle\Service;
 
 use \Doctrine\Bundle\DoctrineBundle\Registry;
-use Multifinger\AppSettingsBundle\Entity\Setting;
+use Multifinger\SettingsBundle\Entity\Setting;
 
 /**
  * Handles read-write methods to settings database
@@ -28,7 +28,7 @@ class SettingsService
      */
     public function getRecord($name)
     {
-        return $this->doctrine->getRepository('MultifingerAppSettingsBundle:Setting')->findOneBy(['name' => $name]);
+        return $this->doctrine->getRepository('MultifingerSettingsBundle:Setting')->findOneBy(['name' => $name]);
     }
 
     /**
