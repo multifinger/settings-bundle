@@ -1,9 +1,0 @@
-Multifinger\SettingsBundle\Entity\Setting:
-    type:                           entity
-    table:                          multi__settings__setting
-    repositoryClass:                Multifinger\SettingsBundle\Repository\SettingRepository
-    fields:
-        name:                       { type: string, length: 255, id: true }
-        value:                      { type: text }
-        description:                { type: string, length: 1024 }
-    lifecycleCallbacks:             {  }

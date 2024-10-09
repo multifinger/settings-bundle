@@ -8,8 +8,9 @@
     "authors": [{"name": "Maksim Borisov","email": "maksim.i.borisov@gmail.com"}],
     "require": {
         "php": ">=8.1.0",
-        "symfony/framework-bundle": "*",
-        "symfony/console": "*"
+        "symfony/framework-bundle": "5.* || 6.*",
+        "symfony/console": "5.* || 6.*",
+        "doctrine/orm": "^3.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

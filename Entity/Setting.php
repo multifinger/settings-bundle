@@ -3,93 +3,54 @@
 namespace Multifinger\SettingsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Multifinger\SettingsBundle\Repository\SettingRepository;
 
-/**
- * @author Maksim Borisov <maksim.i.borisov@gmail.com> 16.03.2020 19:16
- */
+#[ORM\Entity(repositoryClass: SettingRepository::class)]
+#[ORM\Table(name: 'multi__settings__setting')]
 class Setting
 {
 
-    /**
-     * @var string $name
-     */
-    private $name;
+    #[ORM\Id, ORM\Column(type: 'string', length: 255)]
+    private string $name = 'unnamed';
 
-    /**
-     * @var string $value
-     */
-    private $value;
+    #[ORM\Column(type: 'text')]
+    private ?string $value = null;
 
-    /**
-     * @var string $description
-     */
-    private $description;
+    #[ORM\Column(type: 'string', length: 1024)]
+    private ?string $description = null;
 
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Setting
-     */
-    public function setName($name)
+    public function setName(string $name): self
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * Set value
-     *
-     * @param string $value
-     * @return Setting
-     */
-    public function setValue($value)
+    public function setValue(string $value): self
     {
         $this->value = $value;
-    
+
         return $this;
     }
 
-    /**
-     * Get value
-     *
-     * @return string 
-     */
-    public function getValue()
+    public function getValue(): ?string
     {
         return $this->value;
     }
 
-    /**
-     * Set description
-     *
-     * @param string $description
-     * @return Setting
-     */
-    public function setDescription($description)
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
-    
+
         return $this;
     }
 
-    /**
-     * Get description
-     *
-     * @return string 
-     */
-    public function getDescription()
+    public function getDescription(): ?string
     {
         return $this->description;
     }
