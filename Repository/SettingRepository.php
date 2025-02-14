@@ -3,6 +3,8 @@
 namespace Multifinger\SettingsBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Query;
+use Doctrine\ORM\QueryBuilder;
 
 /**
  * SettingRepository
@@ -16,19 +18,13 @@ class SettingRepository extends EntityRepository
 {
 
     /** Maximum query limit */
-    const MAX_LIMIT = 1000;
+    const int MAX_LIMIT = 1000;
 
-    /**
-     * @param int $limit  limit
-     * @param int $offset offset
-     *
-     * @return mixed
-     */
-    public function getNames($limit, $offset = 0)
+    public function getNames(int $limit, int $offset = 0): array
     {
         $query = $this->getQueryBuilder($limit, $offset)->select('o.name')->getQuery();
 
-        $result = $query->getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
+        $result = $query->getResult(Query::HYDRATE_ARRAY);
 
         $names = array();
         foreach ($result as & $value) {
@@ -38,13 +34,7 @@ class SettingRepository extends EntityRepository
         return $names;
     }
 
-    /**
-     * @param int $limit  limit
-     * @param int $offset offset
-     *
-     * @return \Doctrine\ORM\QueryBuilder
-     */
-    public function getQueryBuilder($limit, $offset = 0)
+    public function getQueryBuilder(int $limit, int $offset = 0): QueryBuilder
     {
         $qb = $this->createQueryBuilder('o');
 

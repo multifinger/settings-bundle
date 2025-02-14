@@ -15,7 +15,7 @@ class Configuration implements ConfigurationInterface
     /**
      * @author Maksim Borisov <maksim.i.borisov@gmail.com> 25.04.17 17:23
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('multifinger_settings');
 

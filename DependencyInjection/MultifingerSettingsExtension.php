@@ -17,7 +17,7 @@ class MultifingerSettingsExtension extends Extension
     /**
      * @author Maksim Borisov <maksim.i.borisov@gmail.com> 25.04.17 17:25
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
